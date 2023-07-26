@@ -2,6 +2,8 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 import Header from '/components/Header';
+import Contact from "/components/Contact";
+import ProjectCard from "/components/ProjectCard";
 
 export default function Project() {
   return (
@@ -18,7 +20,13 @@ export default function Project() {
         <h1>The largest investor's company in Latin America.</h1>
       </section>
 
-      <Image className="cover" src="/img/lg-magenta-0.png" alt="Project cover image" layout="responsive" width={500} height={300} />
+      <Image className="cover"
+            src="/img/lg-magenta-0.png"
+            alt="Project cover image"
+            width={500} height={300}
+            blurDataURL="/img/lg-magenta-0.png"
+            placeholder="blur"
+        />
 
       <section id="project-content">
         <div>
@@ -40,31 +48,25 @@ export default function Project() {
         {/* Add more content as needed */}
       </section>
 
-      <section id="contact">
-        <div className="col a">
-          <h1>Have a project?<br />Let's talk.</h1>
-        </div>
+      <Contact/>
 
-        <div className="col b">
-          <ul>
-            <li><a href="">andrey.rm@gmail.com</a></li>
-            <li><a href="">+5511959122402</a></li>
-          </ul>
-        </div>
-      </section>
+      <section id="work">
+                <ProjectCard
+                    href="/lg-magenta"
+                    title="LG Magenta"
+                    subtitle="Connecting architects, designers and engineers."
+                    imgSrc="/img/lg-magenta-cover.png"
+                />
 
-      <section id="work" className="single">
-        {/* Add project cards as needed */}
-        <div className="project">
-          <div className="title">
-            <h2>LG Magenta</h2>
-            <h4>Connecting architects, designers and engineers.</h4>
-          </div>
-          <div className="image">
-            <Image src="/img/1.png" alt="Project image" layout="responsive" width={500} height={300} />
-          </div>
-        </div>
-      </section>
+                <ProjectCard
+                    href="/tc"
+                    title="TC"
+                    subtitle="Connecting architects, designers and engineers."
+                    imgSrc="/img/tc-cover.png"
+                />
+
+        </section>
+
     </div>
   )
 }

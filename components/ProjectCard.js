@@ -10,7 +10,12 @@ function ProjectCard({ href, title, subtitle, imgSrc }) {
           <h4>{subtitle}</h4>
         </div>
         <div className="image">
-          <Image src={imgSrc} alt={title} layout="responsive" width={500} height={300} />
+          <Image
+            src={imgSrc}
+            alt={title}
+            width={500} height={300}
+            blurDataURL={imgSrc}
+            placeholder="blur" />
         </div>
       
     </Link>
