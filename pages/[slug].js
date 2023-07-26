@@ -10,7 +10,7 @@ export default function Project({ project }) {
   return (
     <div className="single">
       <Head>
-        <title>{project.title}</title>
+        <title>{project.title} | Andrey Macedo</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 

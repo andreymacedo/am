@@ -7,6 +7,8 @@
 
 body
     background: $base-color
+    max-width: 1920px
+    margin: auto
 
 .button
   text-decoration: none
@@ -28,18 +30,29 @@ body
 header
     display: flex
     justify-content: space-between
-    padding: $spacing-m
+    padding: $spacing-s
     align-items: center
+    @include respond(medium)
+        padding: $spacing-m
 
 #landing
-    padding: $spacing-xl
+    padding: $spacing-l $spacing-m
+    
+    @include respond(medium)
+        padding: $spacing-l
+
+    @include respond(large)
+        padding: $spacing-xl
 
 #work
     display: grid
-    grid-template-columns: 1fr 1fr
+    grid-template-columns: 1fr
     gap: $spacing-s
     padding: $spacing-s
 
+    @include respond(medium)
+        grid-template-columns: 1fr 1fr
+        
     .project
         aspect-ratio: 5/4
         border-radius: 12px
@@ -96,9 +109,15 @@ header
 
 #about,
 #contact
-    padding: $spacing-xl
-    gap: $spacing-xl
+    padding: $spacing-m
+    gap: $spacing-m
     display: flex
+    flex-direction: column
+    @include respond(medium)
+        flex-direction: row
+        padding: $spacing-xl
+        gap: $spacing-xl
+    
 
 .col.a
     flex:2

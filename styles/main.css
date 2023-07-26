@@ -1,3 +1,4 @@
+/* Breakpoints */
 /* Spacing */    
 /* Colors */   
 /* Typography */
@@ -10,50 +11,67 @@ body {
   font-family: "Satoshi";
 }
 
-h1 {
-  font-size: 80px;
+p {
+  font-size: 1.5rem;
+  line-height: 1.6;
   font-weight: 400;
-  line-height: 96px;
-  max-width: 800px;
-  letter-spacing: -1.6px;
+  margin-bottom: 24px;
+}
+@media (min-width: 900px) {
+  p {
+    font-size: 1.75rem;
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  font-weight: 400;
+}
+@media (min-width: 900px) {
+  h1 {
+    font-size: 4rem;
+    max-width: 800px;
+    letter-spacing: -1.6px;
+  }
+}
+@media (min-width: 1180px) {
+  h1 {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
   padding-bottom: 4px;
+  font-size: 2rem;
+  font-size: 2rem;
 }
-
 h3 {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #fff;
 }
 
 h4 {
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 500;
   color: #666;
   margin-bottom: 32px;
 }
 
 h5 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
   padding-bottom: 4px;
 }
 
 h6 {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
   opacity: 0.8;
-}
-
-p {
-  font-size: 28px;
-  line-height: 1.6;
-  font-weight: 400;
-  margin-bottom: 24px;
 }
 
 * {
@@ -63,6 +81,8 @@ p {
 
 body {
   background: #050505;
+  max-width: 1920px;
+  margin: auto;
 }
 
 .button {
@@ -86,19 +106,39 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 32px;
+  padding: 12px;
   align-items: center;
+}
+@media (min-width: 900px) {
+  header {
+    padding: 32px;
+  }
 }
 
 #landing {
-  padding: 160px;
+  padding: 48px 32px;
+}
+@media (min-width: 900px) {
+  #landing {
+    padding: 48px;
+  }
+}
+@media (min-width: 1180px) {
+  #landing {
+    padding: 160px;
+  }
 }
 
 #work {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 12px;
   padding: 12px;
+}
+@media (min-width: 900px) {
+  #work {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 #work .project {
   aspect-ratio: 5/4;
@@ -160,9 +200,18 @@ header {
 
 #about,
 #contact {
-  padding: 160px;
-  gap: 160px;
+  padding: 32px;
+  gap: 32px;
   display: flex;
+  flex-direction: column;
+}
+@media (min-width: 900px) {
+  #about,
+  #contact {
+    flex-direction: row;
+    padding: 160px;
+    gap: 160px;
+  }
 }
 
 .col.a {
