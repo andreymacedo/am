@@ -1,5 +1,8 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import Header from '/components/Header';
+import Contact from '/components/Contact';
+import ProjectCard from '/components/ProjectCard';
 
 export default function Home() {
   return (
@@ -7,30 +10,29 @@ export default function Home() {
       <Head>
         <title>Document</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/styles.css" />
       </Head>
 
-      <header>
-        <h3>Andrey Macedo</h3>
-        <Link href="/contact" className="button">
-          Contact
-        </Link>
-      </header>
+      <Header />
 
       <section id="landing">
         <h1>Hi, I'm a designer based in São Paulo.</h1>
       </section>
 
       <section id="work">
-        <Link href="/lg-magenta" className="project">
-          <div className="title">
-            <h2>LG Magenta</h2>
-            <h4>Connecting architects, designers and engineers.</h4>
-          </div>
-          <div className="image">
-            <img src="/img/1.png" alt="LG Magenta" />
-          </div>
-        </Link>
+        
+      <ProjectCard
+            href="/lg-magenta"
+            title="LG Magenta"
+            subtitle="Connecting architects, designers and engineers."
+            imgSrc="/img/lg-magenta-cover.png"
+        />
+
+        <ProjectCard
+            href="/tc"
+            title="TC"
+            subtitle="Connecting architects, designers and engineers."
+            imgSrc="/img/tc-cover.png"
+        />
         
         {/*... rest of your projects ...*/}
       </section>
@@ -60,18 +62,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact">
-        <div className="col a">
-          <h1>Ready to talk about your project?</h1>
-        </div>
-
-        <div className="col b">
-          <ul>
-            <li><a href="mailto:andrey.rm@gmail.com">andrey.rm@gmail.com</a></li>
-            <li><a href="tel:+5511959122402">+5511959122402</a></li>
-          </ul>
-        </div>
-      </section>
+    <Contact />
 
     </div>
   )

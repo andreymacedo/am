@@ -1,67 +1,44 @@
-
-$base-color: #050505
-$inverse-color: #fff
-
-$spacing-base: 8px
-$spacing-s: $spacing-base*1.5
-$spacing-m: $spacing-base*4
-$spacing-l: $spacing-base*6
-$spacing-xl: $spacing-base*20
-
-@font-face
-    font-family: "Satoshi"
-    src: url("fonts/Satoshi-Variable.ttf")
-
+@import 'foundation'
 
 *
     margin: 0
     padding: 0
-.button
-    text-decoration: none
-    padding: 16px 28px
-    border-radius: 32px
-    background-color: rgb(26, 26, 26)
-    font-weight: 600
-    line-height: 1
-    color: $inverse-color
-    transition: all .2s ease-out
-    &:hover
-        background: rgb(39, 39, 39)
-    &:active
-            transform: scale3d(.96,.96,1)
-            opacity: .6
 
-p
-    font-size: 28px
-    line-height: 1.6
-    font-weight: 400
-    margin-bottom: 24px
-h1
-        font-size: 80px
-        font-weight: 400
-        line-height: 96px
-        max-width: 800px
-        letter-spacing: -1.6px
 body
     background: $base-color
-    color: $inverse-color
-    font-family: 'Satoshi'
+
+.button
+  text-decoration: none
+  padding: 16px 28px
+  border-radius: 32px
+  background-color: rgb(26, 26, 26)
+  font-weight: 600
+  line-height: 1
+  color: $inverse-color
+  transition: all 0.2s ease-out
+
+  &:hover
+    background: rgb(39, 39, 39)
+
+  &:active
+    transform: scale3d(0.96, 0.96, 1)
+    opacity: 0.6
+
 header
     display: flex
     justify-content: space-between
     padding: $spacing-m
     align-items: center
-    h3
-        font-weight: 500
-        font-size: 18
-    
+
 #landing
     padding: $spacing-xl
+
 #work
     display: grid
     grid-template-columns: 1fr 1fr
     gap: $spacing-s
     padding: $spacing-s
+
     .project
         aspect-ratio: 5/4
         border-radius: 12px
@@ -74,6 +51,7 @@ header
         box-sizing: border-box
         border: 2px solid rgba(0,0,0,0)
         color: $inverse-color
+
         .title
             padding: $spacing-m
             position: absolute
@@ -83,14 +61,7 @@ header
             transition: all .4s ease
             z-index: 1
             flex: 1
-            h2
-                font-size: 24px
-                font-weight: 600
-                padding-bottom: 4px
-            h4
-                font-size: 18px
-                font-weight: 400
-                opacity: .8
+
         .image
             overflow: hidden
             border-radius: 12px
@@ -100,6 +71,7 @@ header
             img
                 width: 100%
                 transition: all .6s ease
+
         &:hover
             outline: 3px solid white
             img
@@ -109,18 +81,17 @@ header
             .title
                 opacity: 1
                 transform: translate(0,0)
+
         &:active
             transform: scale3d(.98,.98,1)
             opacity: .6
             img
                 transform: scale(1.04)
                 opacity: .5
+
 #work.single
     grid-template-columns: 1fr 1fr 1fr
-            
-            
-            
-                
+
 #about,
 #contact
     padding: $spacing-xl
@@ -129,35 +100,36 @@ header
 
 .col.a
     flex:2
+
 .col.b
     flex:1
+
 ul a
     color: $inverse-color
     &:hover
-                opacity: .8
+        opacity: .8
+
 ul
-        list-style: none
-        font-size: 18px
-        display: block
-        li
-            padding: 8px 0
-            font-weight: 500
-            
+    list-style: none
+    font-size: 18px
+    display: block
+    li
+        padding: 8px 0
+        font-weight: 500
+
 #about
     overflow: hidden
-    h2
-        font-size: 22px
-        font-weight: 500
-        color: #666
-        margin-bottom: 32px
+
 #contact
     overflow: hidden
     border-top: 1px solid #0e0e0e
     .col
         align-items: flex-end
         display: flex
+
 .cover
     width: 100%
+
 #project-content
     padding: $spacing-xl 24px
     display: flex
