@@ -1,25 +1,23 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-function ProjectCard({ href, title, subtitle, imgSrc }) {
+export default function ProjectCard({ href, title, subtitle, coverImgSrc }) {
   return (
-    <Link href={href} className="project">
-      
+    <Link className="project" href={href}>
+     
         <div className="title">
           <h2>{title}</h2>
-          <h4>{subtitle}</h4>
+          <h6>{subtitle}</h6>
         </div>
         <div className="image">
-          <Image
-            src={imgSrc}
+          <Image 
+            src={coverImgSrc} 
             alt={title}
-            width={500} height={300}
-            blurDataURL={imgSrc}
-            placeholder="blur" />
+            width={500}
+            height={400}
+          />
         </div>
-      
+
     </Link>
   );
 }
-
-export default ProjectCard;

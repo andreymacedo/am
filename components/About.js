@@ -4,7 +4,7 @@ function ProjectCard({ href, title, subtitle, imgSrc }) {
   return (
     <section id="about">
         <div className="col a">
-          <h2>About</h2>
+          <h4>About</h4>
           <p>
             I'm a designer passionate about turning complex ideas into simple solutions that makes people's lives better.
           </p>
@@ -19,7 +19,7 @@ function ProjectCard({ href, title, subtitle, imgSrc }) {
         </div>
 
         <div className="col b">
-          <h2>Worked with</h2>
+          <h4>Worked with</h4>
           <ul>
             <li><Link href="/lg">LG</Link></li>
             {/*... rest of your links ...*/}
