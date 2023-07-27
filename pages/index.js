@@ -7,9 +7,10 @@ import ProjectCard from "/components/ProjectCard";
 import About from "/components/About";
 import { projects } from '/data/projectData';
 
+
 export default function Home() {
   return (
-    <div>
+    <div className="main">
       <Head>
         <title>Andrey Macedo</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,7 +24,7 @@ export default function Home() {
 
       
 
-      <section id="work">
+      <section id="work"> 
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}

@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function ProjectCard({ href, title, subtitle, coverImgSrc }) {
   return (
-    <Link className="project" href={href}>
+    <Link className="project" href={href} key={href}> 
      
         <div className="title">
           <h2>{title}</h2>

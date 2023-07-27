@@ -213,3 +213,27 @@ ul
     background: #242424
     &:hover
         background: #5e5e5e
+
+
+@keyframes fade-in
+  0% 
+    opacity: 0
+    transform: translate(0,32px)
+  100% 
+    opacity: 1
+
+#landing
+    h1,
+    h4
+        animation: fade-in .6s ease-out forwards
+        opacity: 0
+    h1
+        animation-delay: .2s
+.cover
+    opacity: 0
+.cover
+    animation: fade-in .8s ease-out forwards
+    animation-delay: .3s
+.project
+    animation: fade-in .8s ease-out forwards
+    

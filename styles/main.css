@@ -339,4 +339,35 @@ ul li {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #5e5e5e;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translate(0, 32px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#landing h1,
+#landing h4 {
+  animation: fade-in 0.6s ease-out forwards;
+  opacity: 0;
+}
+#landing h1 {
+  animation-delay: 0.2s;
+}
+
+.cover {
+  opacity: 0;
+}
+
+.cover {
+  animation: fade-in 0.8s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+.project {
+  animation: fade-in 0.8s ease-out forwards;
 }/*# sourceMappingURL=main.css.map */

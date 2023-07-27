@@ -5,28 +5,31 @@ import Header from "/components/Header";
 import Contact from "/components/Contact";
 import ProjectCard from "/components/ProjectCard";
 import {projects} from '/data/projectData';
+import { useEffect, useRef } from 'react';
+import { useRouter } from 'next/router';
 
-export default function Project({project}) {
+export default function Project({ project }) {
+    const router = useRouter();
+
     return (
-        <div className="single">
-            <Head>
-                <title>{project.title}
-                &nbsp;― Andrey Macedo</title>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-            </Head>
+      <div className="main single" key={router.asPath}>
+        <Head>
+        <title>{`${project.title} ― Andrey Macedo`}</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        </Head>
 
             <Header/>
 
             <section id="landing">
-                <h4>{
+                <h4 >{
                     project.title
                 }</h4>
-                <h1>{
+                <h1 >{
                     project.subtitle
                 }</h1>
             </section>
 
-            <Image className="cover"
+            <Image className="cover" 
                 src={
                     project.coverImgSrc
                 }
@@ -42,7 +45,7 @@ export default function Project({project}) {
                 {
                 project.blocks.map((block, index) => {
                     if (block.type === "text") {
-                        return <p key={index}>
+                        return <p key={index} data-aos="example-anim3">
                             {
                             block.content
                         }</p>;
@@ -57,7 +60,8 @@ export default function Project({project}) {
                             blurDataURL={
                                 project.coverImgSrc
                             }
-                            placeholder="blur"/>;
+                            placeholder="blur"
+                            data-aos="example-anim3"/>;
                     } else {
                         return null; // or handle other block types as needed
                     }
