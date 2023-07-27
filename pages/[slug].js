@@ -52,9 +52,12 @@ export default function Project({project}) {
                                 block.src
                             }
                             alt="Project image"
-                            layout="responsive"
                             width={1280}
-                            height={800}/>;
+                            height={800}
+                            blurDataURL={
+                                project.coverImgSrc
+                            }
+                            placeholder="blur"/>;
                     } else {
                         return null; // or handle other block types as needed
                     }

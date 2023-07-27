@@ -37,7 +37,7 @@ h1 {
     letter-spacing: -1.6px;
   }
 }
-@media (min-width: 1180px) {
+@media (min-width: 1400px) {
   h1 {
     font-size: 5rem;
     line-height: 1.2;
@@ -139,7 +139,7 @@ header a {
     padding: 48px;
   }
 }
-@media (min-width: 1180px) {
+@media (min-width: 1400px) {
   #landing {
     padding: 160px;
   }
@@ -287,14 +287,17 @@ ul li {
 #project-content img {
   width: 100%;
   height: 100%;
-  max-width: 1280px;
+  max-width: 960px;
   margin: auto;
   border-radius: 12px;
 }
-@media (min-width: 900px) {
+@media (min-width: 1400px) {
   #project-content {
     padding: 160px 24px;
     gap: 96px;
+  }
+  #project-content img {
+    max-width: 1280px;
   }
 }
 
