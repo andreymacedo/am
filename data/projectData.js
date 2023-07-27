@@ -6,8 +6,8 @@ export const projects = [
     subtitle: "Connecting architects, designers and engineers.",
     coverImgSrc: "/img/lg-magenta-cover.png",
     blocks: [
-      { type: "text", content: "Donec mattis id lorem tincidunt pulvinar. Maecenas consectetur fermentum nunc non tempus. Nunc congue, odio quis feugiat venenatis, urna leo euismod nunc, et accumsan nibh urna nec ante. Suspendisse id elementum mauris, et tincidunt ex. Sed suscipit quam non ipsum viverra scelerisque. Ut vitae condimentum nisi, consectetur vestibulum velit." },
-      { type: "image", src: "/img/lg-magenta-1.png" },
+      { type: "text", content: "The LG Magenta initiative is a comprehensive resource hub for architects and designers. It offers access to the latest architectural trends, expert-led master classes, personalized office services, and exclusive previews of LG product launches. Users can download 3D models and detailed specifications for seamless project integration. The initiative also provides an opportunity to visit LG's exclusive showroom, the LG Business Center, and to showcase their projects across LG's brand channels." },
+      { type: "image", src: "/img/lg-magenta-4.png" },
       { type: "text", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum iaculis justo vel justo mattis lacinia imperdiet in ante. Praesent eu nibh non est tincidunt semper ut vel risus. Morbi sed felis cursus, luctus felis nec, semper justo. Suspendisse potenti. Aliquam eu posuere risus. " },
       // more blocks as needed
     ]
@@ -18,8 +18,10 @@ export const projects = [
     subtitle: "The largest investor's company in Latin America.",
     coverImgSrc: "/img/tc-cover.png",
     blocks: [
-      { type: "text", content: "Through a solid design process, I'm always looking to push the boundaries of technology to create better human-centered experiences." },
-      { type: "image", src: "/img/tc-1.png" },
+      { type: "text", content: "TC is a platform that caters to traders with features like zero brokerage and specialized trading tools. It hosts a diverse team of experts and a community of seasoned investors who share insights and strategies. The platform is designed to optimize your investment experience and maximize profits through shared knowledge and exclusive benefits." },
+      { type: "image", src: "/img/tc-2.png" },
+      { type: "image", src: "/img/tc-2.png" },
+      { type: "image", src: "/img/tc-2.png" },
       // more blocks as needed
     ]
   },
