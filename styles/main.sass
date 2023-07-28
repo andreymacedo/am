@@ -23,16 +23,17 @@ body
     .icon
         transform: rotate(-45deg)
         transition: all .2s ease
+    &:active
+        color: $inverse-color
+        transform: scale3d(0.96, 0.96, 1)
+        opacity: 0.6
     &:hover
         background: $inverse-color
         color: $base-color
         padding: 16px 32px
         .icon
             transform: rotate(0deg)
-
-    &:active
-        transform: scale3d(0.96, 0.96, 1)
-        opacity: 0.6
+    
 
 header
     display: flex
@@ -225,15 +226,17 @@ ul
 #landing
     h1,
     h4
-        animation: fade-in .6s ease-out forwards
+        animation: fade-in .6s cubic-bezier(.17,.47,.57,.99) forwards
         opacity: 0
     h1
         animation-delay: .2s
 .cover
     opacity: 0
+    background: #333
 .cover
-    animation: fade-in .8s ease-out forwards
+    animation: fade-in .8s cubic-bezier(.17,.47,.57,.99) forwards
     animation-delay: .3s
-.project
+#work
+    animation-delay: .6s
     animation: fade-in .8s ease-out forwards
     

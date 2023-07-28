@@ -4,14 +4,14 @@ export const projects = [
     href: "/lg-magenta",
     title: "LG Magenta",
     subtitle: "Connecting architects, designers and engineers.",
-    coverImgSrc: "/img/lg-magenta-thumbnail.png",
+    coverImgSrc: "/img/lg-magenta-thumbnail.png?version=2",
     blocks: [
       { type: "text", content: "The LG Magenta initiative is a comprehensive resource hub for architects and designers. It offers access to the latest architectural trends, expert-led master classes, personalized office services, and exclusive previews of LG product launches. Users can download 3D models and detailed specifications for seamless project integration. The initiative also provides an opportunity to visit LG's exclusive showroom, the LG Business Center, and to showcase their projects across LG's brand channels." },
-      { type: "image", src: "/img/lg-magenta-1.png" },
-      { type: "image", src: "/img/lg-magenta-2.png" },
-      { type: "image", src: "/img/lg-magenta-3.png" },
-      { type: "image", src: "/img/lg-magenta-4.png" },
-      { type: "image", src: "/img/lg-magenta-5.png" },
+      { type: "image", src: "/img/lg-magenta-1.png?version=2" },
+      { type: "image", src: "/img/lg-magenta-2.png?version=2" },
+      { type: "image", src: "/img/lg-magenta-3.png?version=2" },
+      { type: "image", src: "/img/lg-magenta-4.png?version=2" },
+      { type: "image", src: "/img/lg-magenta-5.png?version=2" },
       { type: "text", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum iaculis justo vel justo mattis lacinia imperdiet in ante. Praesent eu nibh non est tincidunt semper ut vel risus. Morbi sed felis cursus, luctus felis nec, semper justo. Suspendisse potenti. Aliquam eu posuere risus. " },
       // more blocks as needed
     ]

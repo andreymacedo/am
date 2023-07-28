@@ -103,6 +103,11 @@ body {
   transform: rotate(-45deg);
   transition: all 0.2s ease;
 }
+.button:active {
+  color: #fff;
+  transform: scale3d(0.96, 0.96, 1);
+  opacity: 0.6;
+}
 .button:hover {
   background: #fff;
   color: #050505;
@@ -110,10 +115,6 @@ body {
 }
 .button:hover .icon {
   transform: rotate(0deg);
-}
-.button:active {
-  transform: scale3d(0.96, 0.96, 1);
-  opacity: 0.6;
 }
 
 header {

@@ -36,6 +36,7 @@ export default function Project({ project }) {
                 alt="Project cover image"
                 width={1920}
                 height={1080}
+                priority={true}
                 blurDataURL={
                     project.coverImgSrc
                 }

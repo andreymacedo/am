@@ -15,7 +15,7 @@ export default function ProjectCard({ href, title, subtitle, coverImgSrc }) {
             alt={title}
             width={500}
             height={400}
-          />
+          />on
         </div>
 
     </Link>
