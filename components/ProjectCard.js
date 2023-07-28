@@ -15,7 +15,9 @@ export default function ProjectCard({ href, title, subtitle, coverImgSrc }) {
             alt={title}
             width={500}
             height={400}
-          />on
+            placeholder="blur"
+            blurDataURL={`/public/img/image?url=${coverImgSrc}&w=16&q=1`}
+          />
         </div>
 
     </Link>

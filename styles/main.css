@@ -185,6 +185,7 @@ header a {
   border-radius: 12px;
   width: 100%;
   transition: all 0.4s ease;
+  background: #333;
 }
 #work .project .image img {
   width: 100%;
@@ -201,6 +202,9 @@ header a {
 #work .project:hover .title {
   opacity: 1;
   transform: translate(0, 0);
+}
+#work .project:hover .image {
+  background: #000;
 }
 #work .project:active {
   transform: scale3d(0.98, 0.98, 1);
@@ -353,7 +357,7 @@ ul li {
 }
 #landing h1,
 #landing h4 {
-  animation: fade-in 0.6s ease-out forwards;
+  animation: fade-in 0.6s cubic-bezier(0.17, 0.47, 0.57, 0.99) forwards;
   opacity: 0;
 }
 #landing h1 {
@@ -362,13 +366,15 @@ ul li {
 
 .cover {
   opacity: 0;
+  background: #333;
 }
 
 .cover {
-  animation: fade-in 0.8s ease-out forwards;
+  animation: fade-in 0.8s cubic-bezier(0.17, 0.47, 0.57, 0.99) forwards;
   animation-delay: 0.3s;
 }
 
-.project {
+#work {
+  animation-delay: 0.6s;
   animation: fade-in 0.8s ease-out forwards;
 }/*# sourceMappingURL=main.css.map */
