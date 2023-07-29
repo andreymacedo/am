@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-export default function ProjectCard({ href, title, subtitle, coverImgSrc }) {
+export default function ProjectCard({ href, title, subtitle, thumbnailImgSrc }) {
   return (
     <Link className="project" href={href} key={href}> 
      
@@ -11,12 +11,14 @@ export default function ProjectCard({ href, title, subtitle, coverImgSrc }) {
         </div>
         <div className="image">
           <Image 
-            src={coverImgSrc} 
+            src={thumbnailImgSrc} 
             alt={title}
-            width={500}
-            height={400}
+            width={1280}
+            height={800}
+            priority
             placeholder="blur"
-            blurDataURL={`/public/img/image?url=${coverImgSrc}&w=16&q=1`}
+            quality={100}
+            blurDataURL={`/public/img/?url=${thumbnailImgSrc}&w=16&q=1`}
           />
         </div>
 

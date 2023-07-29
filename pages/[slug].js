@@ -36,11 +36,12 @@ export default function Project({ project }) {
                 alt="Project cover image"
                 width={1920}
                 height={1080}
-                priority={true}NP
+                priority
                 blurDataURL={
                     project.coverImgSrc
                 }
-                placeholder="blur"/>
+                placeholder="blur"
+                quality={100}/>
 
             <section id="project-content">
                 {
@@ -61,6 +62,7 @@ export default function Project({ project }) {
                             blurDataURL={
                                 project.coverImgSrc
                             }
+                            quality={100}
                             placeholder="blur"
                             data-aos="example-anim3"/>;
                     } else {

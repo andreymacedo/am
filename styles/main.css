@@ -149,8 +149,8 @@ header a {
 #work {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 12px;
-  padding: 12px;
+  gap: 8px;
+  padding: 10px;
 }
 @media (min-width: 900px) {
   #work {
@@ -159,7 +159,7 @@ header a {
 }
 #work .project {
   aspect-ratio: 5/4;
-  border-radius: 12px;
+  border-radius: 20px;
   display: flex;
   overflow: hidden;
   transition: all 0.2s ease;
@@ -185,7 +185,7 @@ header a {
   border-radius: 12px;
   width: 100%;
   transition: all 0.4s ease;
-  background: #333;
+  background: #1c1c1c;
 }
 #work .project .image img {
   width: 100%;
