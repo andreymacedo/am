@@ -8,10 +8,17 @@ import About from "/components/About";
 import { projects } from '/data/projectData';
 
 
+
 export default function Home() {
   return (
+
+
+
     <div className="main">
       <Head>
+
+      
+
         <title>Andrey Macedo</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Designer based in São Paulo." />
@@ -23,7 +30,7 @@ export default function Home() {
 
       </Head>
 
-      <Header />g
+      <Header />
 
       <section id="landing">
         <h1>Hi, I'm a designer based in São Paulo.</h1>
