@@ -14,12 +14,24 @@ export default function Project({ project }) {
     return (
       <div className="main single" key={router.asPath}>
         <Head>
-        <title>{`${project.title} ― Andrey Macedo`}</title>
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>{`${project.title} ― Andrey Macedo`}</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <meta name="description" content="Designer based in São Paulo." />
+            <meta name="keywords" content="Andrey Macedo, Product Designer, UX Design, UI Design, Visual Design, Interaction Design" />
+            <meta name="author" content="Andrey Macedo" />
+
+
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content="https://www.andreymacedo.com/" />
+            <meta property="og:title" content="Andrey Macedo" />
+            <meta property="og:description" content="Designer based in São Paulo." />
+
+            <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+            <link rel="alternate icon" href="/favicon.ico" type="image/x-icon" />
         </Head>
 
-            <Header/>
-
+            <Header />
+            
             <section id="landing">
                 <h4 >{
                     project.title

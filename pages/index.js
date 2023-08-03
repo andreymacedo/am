@@ -14,6 +14,14 @@ export default function Home() {
       <Head>
         <title>Andrey Macedo</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Designer based in São Paulo." />
+        <meta name="keywords" content="Andrey Macedo, Product Designer, UX Design, UI Design, Visual Design, Interaction Design" />
+        <meta name="author" content="Andrey Macedo" />
+
+
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="alternate icon" href="/favicon.ico" type="image/x-icon" />
+
       </Head>
 
       <Header />
