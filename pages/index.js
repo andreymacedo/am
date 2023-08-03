@@ -20,11 +20,10 @@ export default function Home() {
 
 
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="alternate icon" href="/favicon.ico" type="image/x-icon" />
 
       </Head>
 
-      <Header />
+      <Header />g
 
       <section id="landing">
         <h1>Hi, I'm a designer based in São Paulo.</h1>

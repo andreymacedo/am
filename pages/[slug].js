@@ -27,11 +27,10 @@ export default function Project({ project }) {
             <meta property="og:description" content="Designer based in São Paulo." />
 
             <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-            <link rel="alternate icon" href="/favicon.ico" type="image/x-icon" />
         </Head>
 
             <Header />
-            
+
             <section id="landing">
                 <h4 >{
                     project.title
