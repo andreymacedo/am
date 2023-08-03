@@ -21,8 +21,15 @@ function ProjectCard({ href, title, subtitle, imgSrc }) {
         <div className="col b" data-aos="example-anim3" data-aos-delay="200">
           <h4>Worked with</h4>
           <ul>
-            <li><Link href="/lg">LG</Link></li>
-            {/*... rest of your links ...*/}
+            <li><a href="https://www.lg.com/br" target='_blank'>LG</a></li>
+            <li><a href="https://www.abbottbrasil.com.br/" target='_blank'>Abbot</a></li>
+            <li><a href="https://www.chaleao.com.br/" target='_blank'>Leão</a></li>
+            <li><a href="https://www.janssen.com/" target='_blank'>Janssen</a></li>
+            <li><a href="https://wearemci.com/" target='_blank'>MCI</a></li>
+            <li><a href="https://casafy.com.br/" target='_blank'>Casafy</a></li>
+            <li><a href="https://economatica.com/" target='_blank'>Economatica</a></li>
+            <li><a href="https://www.riprisma.com/" target='_blank'>Prisma</a></li>
+            
           </ul>
         </div>
       </section>
