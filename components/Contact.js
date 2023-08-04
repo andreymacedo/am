@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <section id="contact">
         <div className="col a" data-aos="example-anim3">
-          <h1>Ready to talk about your project?</h1>
+          <h1>Ready to build something new?</h1>
         </div>
 
         <div className="col b" data-aos="example-anim3">
