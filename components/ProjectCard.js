@@ -31,20 +31,18 @@ export default function ProjectCard({ href, title, subtitle, thumbnailImgSrc }) 
         <h2>{title}</h2>
         <h6>{subtitle}</h6>
       </div>
-      <div className="image-container">
-        <div className={`image ${loaded ? 'fade-in' : ''}`}>
-          <Image
-            src={thumbnailImgSrc}
-            alt={title}
-            width={1280}
-            height={800}
-            priority
-            placeholder={blurredSrc ? 'blur' : 'empty'}
-            blurDataURL={blurredSrc}
-            quality={100}
-            onLoad={handleImageLoad}
-          />
-        </div>
+      <div className={`image ${loaded ? 'fade-in' : ''}`}>
+        <Image
+          src={thumbnailImgSrc}
+          alt={title}
+          width={1280}
+          height={800}
+          priority
+          placeholder={blurredSrc ? 'blur' : 'empty'}
+          blurDataURL={blurredSrc}
+          quality={100}
+          onLoad={handleImageLoad}
+        />
       </div>
       <style jsx>{`
         .project {
@@ -55,16 +53,14 @@ export default function ProjectCard({ href, title, subtitle, thumbnailImgSrc }) 
           /* Add any default styles for the title */
         }
 
-        .image-container {
-          /* Add any default styles for the image container */
-        }
-
         .image {
-          opacity: 0; /* Set default image's opacity to 0 */
+          /* Define the fade-in animation styles for the image */
+          opacity: 0;
+          animation: fadeIn 1s ease-in-out;
         }
 
         .fade-in {
-          /* Define the fade-in animation styles for the image */
+          /* The fade-in animation keyframes */
           animation: fadeIn 1s ease-in-out;
         }
 
