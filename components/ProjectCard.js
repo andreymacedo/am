@@ -44,35 +44,7 @@ export default function ProjectCard({ href, title, subtitle, thumbnailImgSrc }) 
           onLoad={handleImageLoad}
         />
       </div>
-      <style jsx>{`
-        .project {
-          /* Add any default styles for the project card */
-        }
 
-        .title {
-          /* Add any default styles for the title */
-        }
-
-        .image {
-          /* Define the fade-in animation styles for the image */
-          opacity: 0;
-          animation: fadeIn 1s ease-in-out;
-        }
-
-        .fade-in {
-          /* The fade-in animation keyframes */
-          animation: fadeIn 1s ease-in-out;
-        }
-
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-          }
-          to {
-            opacity: 1;
-          }
-        }
-      `}</style>
     </Link>
   );
 }
