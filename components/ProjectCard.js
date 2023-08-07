@@ -44,6 +44,29 @@ export default function ProjectCard({ href, title, subtitle, thumbnailImgSrc }) 
           onLoad={handleImageLoad} // Add the onLoad event handler
         />
       </div>
+      <style jsx>{`
+        .project {
+          /* Add any default styles for the project card */
+        }
+
+        .fade-in {
+          /* Define the fade-in animation styles */
+          animation: fadeIn 1s ease-in-out;
+        }
+
+        .loaded {
+          /* Define any additional styles for the loaded state */
+        }
+
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+      `}</style>
     </Link>
   );
 }
