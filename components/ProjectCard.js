@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 
 export default function ProjectCard({ href, title, subtitle, thumbnailImgSrc }) {
   const [blurredSrc, setBlurredSrc] = useState(null);
-  const [loaded, setLoaded] = useState(false); // Add a state to track the image loading status
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
     async function fetchBlurredImage() {
@@ -26,36 +26,46 @@ export default function ProjectCard({ href, title, subtitle, thumbnailImgSrc }) 
   };
 
   return (
-    <Link className={`project ${loaded ? 'fade-in loaded' : ''}`} href={href} key={href}>
+    <Link href={href} key={href} className="project">
       <div className="title">
         <h2>{title}</h2>
         <h6>{subtitle}</h6>
       </div>
-      <div className="image">
-        <Image
-          src={thumbnailImgSrc}
-          alt={title}
-          width={1280}
-          height={800}
-          priority
-          placeholder={blurredSrc ? 'blur' : 'empty'}
-          blurDataURL={blurredSrc}
-          quality={100}
-          onLoad={handleImageLoad} // Add the onLoad event handler
-        />
+      <div className="image-container">
+        <div className={`image ${loaded ? 'fade-in' : ''}`}>
+          <Image
+            src={thumbnailImgSrc}
+            alt={title}
+            width={1280}
+            height={800}
+            priority
+            placeholder={blurredSrc ? 'blur' : 'empty'}
+            blurDataURL={blurredSrc}
+            quality={100}
+            onLoad={handleImageLoad}
+          />
+        </div>
       </div>
       <style jsx>{`
         .project {
           /* Add any default styles for the project card */
         }
 
-        .fade-in {
-          /* Define the fade-in animation styles */
-          animation: fadeIn 1s ease-in-out;
+        .title {
+          /* Add any default styles for the title */
         }
 
-        .loaded {
-          /* Define any additional styles for the loaded state */
+        .image-container {
+          /* Add any default styles for the image container */
+        }
+
+        .image {
+          opacity: 0; /* Set default image's opacity to 0 */
+        }
+
+        .fade-in {
+          /* Define the fade-in animation styles for the image */
+          animation: fadeIn 1s ease-in-out;
         }
 
         @keyframes fadeIn {
