@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 
 export default function ProjectCard({ href, title, subtitle, thumbnailImgSrc }) {
   const [blurredSrc, setBlurredSrc] = useState(null);
+  const [loaded, setLoaded] = useState(false); // Add a state to track the image loading status
 
   useEffect(() => {
     async function fetchBlurredImage() {
@@ -19,15 +20,20 @@ export default function ProjectCard({ href, title, subtitle, thumbnailImgSrc }) 
     fetchBlurredImage();
   }, [thumbnailImgSrc]);
 
+  // Function to handle image load event
+  const handleImageLoad = () => {
+    setLoaded(true);
+  };
+
   return (
-    <Link className="project" href={href} key={href}> 
+    <Link className={`project ${loaded ? 'fade-in loaded' : ''}`} href={href} key={href}>
       <div className="title">
         <h2>{title}</h2>
         <h6>{subtitle}</h6>
       </div>
       <div className="image">
-        <Image 
-          src={thumbnailImgSrc} 
+        <Image
+          src={thumbnailImgSrc}
           alt={title}
           width={1280}
           height={800}
@@ -35,6 +41,7 @@ export default function ProjectCard({ href, title, subtitle, thumbnailImgSrc }) 
           placeholder={blurredSrc ? 'blur' : 'empty'}
           blurDataURL={blurredSrc}
           quality={100}
+          onLoad={handleImageLoad} // Add the onLoad event handler
         />
       </div>
     </Link>
