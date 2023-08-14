@@ -3,22 +3,10 @@ import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
 export default function ProjectCard({ href, title, subtitle, thumbnailImgSrc }) {
-  const [blurredSrc, setBlurredSrc] = useState(null);
+  
   const [loaded, setLoaded] = useState(false);
 
-  useEffect(() => {
-    async function fetchBlurredImage() {
-      try {
-        const response = await fetch(`/api/getBlurredImage?src=${thumbnailImgSrc}`);
-        const data = await response.json();
-        setBlurredSrc(data.base64);
-      } catch (error) {
-        console.error("Error fetching blurred image:", error);
-      }
-    }
-
-    fetchBlurredImage();
-  }, [thumbnailImgSrc]);
+  
 
   // Function to handle image load event
   const handleImageLoad = () => {
@@ -38,8 +26,6 @@ export default function ProjectCard({ href, title, subtitle, thumbnailImgSrc }) 
           width={1280}
           height={800}
           priority
-          placeholder={blurredSrc ? 'blur' : 'empty'}
-          blurDataURL={blurredSrc}
           quality={100}
           onLoad={handleImageLoad}
         />
