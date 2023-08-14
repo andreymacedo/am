@@ -42,8 +42,8 @@ export const projects = [
     href: "/becker",
     title: "Becker",
     subtitle: "Find the ideal financial solution for your goals.",
-    thumbnailImgSrc: "/img/becker-thumbnail.png",
-    coverImgSrc: "/img/becker-cover.png?version=122",
+    thumbnailImgSrc: "/img/becker-thumbnail.png?version=1234",
+    coverImgSrc: "/img/becker-cover.png?version=1234",
     blocks: [
       { type: "text", content: "I led the design and development of the website for Becker's credit service, a project dedicated to connecting with customers and assisting them in finding the best financial solutions for their goals. Through a seamless and intuitive interface, users can easily explore custom credit options." },
       { type: "text", content: "This project is being updated. You check the other projects below." },
@@ -55,7 +55,7 @@ export const projects = [
     href: "/peppes",
     title: "Peppe's",
     subtitle: "Redefining the pizza ordering experience.",
-    thumbnailImgSrc: "/img/peppes-thumbnail.png",
+    thumbnailImgSrc: "/img/peppes-thumbnail.png?version=5",
     coverImgSrc: "/img/peppes-cover.png?version=4",
     blocks: [
       { type: "text", content: "In 2017, I took on the Peppe's project, aiming to infuse new life into a traditional pizzeria. Focusing on rebranding, I meticulously designed the brand identity and created concepts for the ordering experience. My goal was to strike the perfect harmony between tradition and innovation. This endeavor involved creating a a modern and timeless brand, seamlessly blending the pizzeria's classic essence with contemporary convenience." },
