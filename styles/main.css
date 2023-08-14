@@ -215,8 +215,16 @@ header a {
   opacity: 0.5;
 }
 
-#work.single {
-  grid-template-columns: 1fr 1fr 1fr;
+.single #work {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  padding: 10px;
+}
+@media (min-width: 900px) {
+  .single #work {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 #about,
@@ -290,7 +298,8 @@ ul li {
   margin: auto;
   padding: 0 0 24px;
 }
-#project-content img {
+#project-content img,
+#project-content video {
   width: 100%;
   height: 100%;
   max-width: 960px;
@@ -302,7 +311,8 @@ ul li {
     padding: 160px 24px;
     gap: 96px;
   }
-  #project-content img {
+  #project-content img,
+  #project-content video {
     max-width: 1280px;
   }
 }
@@ -319,15 +329,17 @@ ul li {
 
 /* Single */
 .single h1 {
-  max-width: 1280px;
-  margin: auto;
+  max-width: 960px;
+  padding: 0;
 }
 .single h4 {
-  max-width: 1280px;
-  margin: auto;
+  max-width: 960px;
+  padding: 0;
 }
 .single #landing {
   padding-top: 120px;
+  margin: auto;
+  max-width: 1200px;
 }
 
 ::-webkit-scrollbar {
@@ -356,6 +368,16 @@ ul li {
     opacity: 1;
   }
 }
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
 #landing h1,
 #landing h4 {
   animation: fade-in 0.6s cubic-bezier(0.17, 0.47, 0.57, 0.99) forwards;

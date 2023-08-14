@@ -117,9 +117,15 @@ header
                 transform: scale(1.04)
                 opacity: .5
 
-#work.single
-    grid-template-columns: 1fr 1fr 1fr
-
+.single
+    #work
+        display: grid
+        grid-template-columns: 1fr
+        gap: 8px
+        padding: 10px
+    
+        @include respond(medium)
+            grid-template-columns: 1fr 1fr 1fr
 #about,
 #contact
     padding: 96px $spacing-m
@@ -174,7 +180,8 @@ ul
         max-width: 820px
         margin: auto
         padding: 0 0 24px
-    img
+    img,
+    video
         width: 100%
         height: 100%
         max-width: 960px
@@ -183,7 +190,8 @@ ul
     @include respond(large)
         padding: $spacing-xl 24px
         gap: 96px
-        img
+        img,
+        video
             max-width: 1280px
 
 [data-aos="example-anim3"]
@@ -198,13 +206,17 @@ ul
 
 .single
     h1
-        max-width: 1280px
-        margin: auto
+        max-width: 960px
+
+        padding: 0
     h4
-        max-width: 1280px
-        margin: auto
+        max-width: 960px
+
+        padding: 0
     #landing
         padding-top: 120px
+        margin: auto
+        max-width: 1200px
     
 ::-webkit-scrollbar
     width: 8px

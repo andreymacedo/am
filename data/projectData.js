@@ -21,17 +21,52 @@ export const projects = [
     title: "TC",
     subtitle: "The largest investor's community in Latin America.",
     thumbnailImgSrc: "/img/tc-thumbnail.png",
-    coverImgSrc: "/img/tc-cover.png?version=9",
+    coverImgSrc: "/img/tc-cover.png?version=2222",
     blocks: [
-      { type: "text", content: "TC is a platform that caters to traders with features like zero brokerage and specialized trading tools. It hosts a diverse team of experts and a community of seasoned investors who share insights and strategies. The platform is designed to optimize your investment experience and maximize profits through shared knowledge and exclusive benefits." },
-      { type: "text", content: "Come back soon for the full project." },
+      { type: "text", content: "TC is your ultimate trading companion, providing not only specialized tools but also a dynamic community of experts and experienced investors. Its commitment is to enrich your investment journey by offering shared insights, strategies, and exclusive advantages." },
+      
 
-      //{ type: "image", src: "/img/tc-1.png?version=8" },
-      //{ type: "image", src: "/img/tc-2.png?version=8" },
-      //{ type: "image", src: "/img/tc-3.png?version=8" },
-      //{ type: "image", src: "/img/tc-4.png?version=8" },
-      // { type: "image", src: "/img/tc-5.png?version=8" },
-      //{ type: "image", src: "/img/tc-6.png?version=8" },
+      { type: "image", src: "/img/tc-1.png?version=2222" },
+      { type: "image", src: "/img/tc-2.png?version=2222" },
+      { type: "image", src: "/img/tc-3.png?version=2222" },
+      
+
+      { type: "text", content: "During my time working with TC, I was deeply involved in data analysis, comprehensive user research, and the application of creative problem-solving methodologies. This involvement allowed me to play a pivotal role in shaping innovative concepts, refining services, and launching new products that have benefited thousands of users on their investment journey." },
+
+      { type: "image", src: "/img/tc-4.png?version=2222" },
+      { type: "image", src: "/img/tc-5.png?version=2222" },
+      { type: "image", src: "/img/tc-6.png?version=2222" },
+    ]
+  },
+  {
+    href: "/becker",
+    title: "Becker",
+    subtitle: "Find the ideal financial solution for your goals.",
+    thumbnailImgSrc: "/img/becker-thumbnail.png",
+    coverImgSrc: "/img/becker-cover.png?version=122",
+    blocks: [
+      { type: "text", content: "I led the design and development of the website for Becker's credit service, a project dedicated to connecting with customers and assisting them in finding the best financial solutions for their goals. Through a seamless and intuitive interface, users can easily explore custom credit options." },
+      { type: "text", content: "This project is being updated. You check the other projects below." },
+
+     
+    ]
+  },
+  {
+    href: "/peppes",
+    title: "Peppe's",
+    subtitle: "Redefining the pizza ordering experience.",
+    thumbnailImgSrc: "/img/peppes-thumbnail.png",
+    coverImgSrc: "/img/peppes-cover.png?version=4",
+    blocks: [
+      { type: "text", content: "In 2017, I took on the Peppe's project, aiming to infuse new life into a traditional pizzeria. Focusing on rebranding, I meticulously designed the brand identity and created concepts for the ordering experience. My goal was to strike the perfect harmony between tradition and innovation. This endeavor involved creating a a modern and timeless brand, seamlessly blending the pizzeria's classic essence with contemporary convenience." },
+
+      { type: "video", src: "/img/peppes-1.mp4?version=4" },
+      { type: "image", src: "/img/peppes-2.png?version=4" },
+      { type: "image", src: "/img/peppes-3.png?version=4" },
+      { type: "image", src: "/img/peppes-4.png?version=4" },
+      { type: "image", src: "/img/peppes-5.png?version=4" },
+      { type: "image", src: "/img/peppes-6.png?version=4" },
+      { type: "video", src: "/img/peppes-7.mp4?version=4" },
     ]
   },
 

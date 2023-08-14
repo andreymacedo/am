@@ -8,6 +8,8 @@ import { projects } from '/data/projectData';
 
 export default function Project({ project }) {
   const router = useRouter();
+  const { asPath } = useRouter();
+
 
   return (
     <div className="main single" key={router.asPath}>
@@ -45,7 +47,22 @@ export default function Project({ project }) {
         {project.blocks.map((block, index) => {
           if (block.type === "text") {
             return <p key={index} data-aos="example-anim3">{block.content}</p>;
-          } else if (block.type === "image") {
+          
+          } else if (block.type === "video") {
+            return (
+              <video
+                key={index}
+                src={block.src}
+                width="1280"
+                height="auto"
+                controls
+                autoPlay
+                muted
+                playsInline
+                loop
+              ></video>
+            );
+} else if (block.type === "image") {
             return (
               <Image
                 key={index}
@@ -65,11 +82,13 @@ export default function Project({ project }) {
 
       <Contact />
 
+
       <section id="work">
-        {projects.map((proj, index) => (
+        {projects.filter(proj => proj.href !== asPath).map((proj, index) => (
           <ProjectCard key={index} {...proj} />
         ))}
       </section>
+
     </div>
   );
 }
