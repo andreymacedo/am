@@ -17,6 +17,11 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
+
+
+
+      <Component {...pageProps} />
+
       <Script
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=G-PH8Q3E6HMR`}
@@ -32,9 +37,7 @@ function MyApp({ Component, pageProps }) {
                     });
                 `}
       </Script>
-
-
-      <Component {...pageProps} />
+      
     </>
   );
 }

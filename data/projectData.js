@@ -46,7 +46,7 @@ export const projects = [
     coverImgSrc: "/img/becker-cover.png?version=1234",
     blocks: [
       { type: "text", content: "I led the design and development of the website for Becker's credit service, a project dedicated to connecting with customers and assisting them in finding the best financial solutions for their goals. Through a seamless and intuitive interface, users can easily explore custom credit options." },
-      { type: "text", content: "This project is being updated. You check the other projects below." },
+      { type: "text", content: "This project is being updated." },
 
      
     ]
