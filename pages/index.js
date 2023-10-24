@@ -33,7 +33,7 @@ export default function Home() {
       <Header />
 
       <section id="landing">
-        <h1>Hi, I'm a designer based in São Paulo.</h1>
+        <h1>Hi, I'm a designer, problem solver and creative thinker.</h1>
       </section>
 
       
